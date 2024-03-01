@@ -1,0 +1,46 @@
+{
+  "id": "224457fd-4a99-4bac-9d88-ecf4e9da5171",
+  "version": "2.0",
+  "name": "Test1",
+  "url": "https://www.gpo.gov",
+  "tests": [{
+    "id": "bfdfacdd-abb4-4334-a198-02e8a28eed4e",
+    "name": "test1",
+    "commands": [{
+      "id": "d479a0e2-0646-44a6-9ad4-103511075269",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd53c796-0fd3-4245-96de-d099b4133895",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9c310fd-04a6-4210-add1-8ea304efb1ed",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//h2[contains(text(),'Latest News')]/../a[1]",
+      "targets": [
+        ["css=a:nth-child(3) .featurette-heading", "css:finder"],
+        ["xpath=//div[@id='boxlet']/div/div/div/a/div/div/h2", "xpath:idRelative"],
+        ["xpath=//a/div/div/h2", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "31809903-5801-4ad0-8685-0c702bc7f672",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bfdfacdd-abb4-4334-a198-02e8a28eed4e"]
+  }],
+  "urls": ["https://www.gpo.gov/"],
+  "plugins": []
+}
